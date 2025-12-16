@@ -22,20 +22,32 @@
 <body>
     <h1 style="text-align: center;"> QUAL A SUA MÍDIA JAPONESA FAVORITA? </h1>
     <p style="color: rgb(255, 255, 255); text-align: center;"> Escreva informações sobre a obra escolhida </p>
+    
     <div style="background-color: rgb(255, 255, 255); border: 2px solid rgb(12, 39, 72); padding: 15px; width: 400px; margin: 0 auto; text-align: center; ">
-    <form> 
+    <form method="post" enctype="multipart/form-data">
+
         <p> OBRA: </p> 
         <input type="text" name="obra" required>
+        <input type="file" id="obraarq">
+
         <p> AUTOR: </p> 
         <input type="text" name="autor" required>
+        <input type="file" id="autorarq">
+
         <p> ANO DE LANÇAMENTO: </p> 
         <input type="text" name="lançamento" required>
+        <input type="file" id="lancamentoarq">
+
         <p> GÊNERO: </p> 
         <input type="text" name="genero" required>
+        <input type="file" id="generoarq">
+
         <p> TEMAS ABORDADOS: </p> 
         <input type="text" name="temas" required> 
-    </form>
+        <input type="file" id="temasarq">
+
+        </form>
    <p> <button type="submit"> ENVIAR FORMULÁRIO </button> </p>
    </div>
 </body>
-</html>
+</html> 
