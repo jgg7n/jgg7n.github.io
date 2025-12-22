@@ -22,7 +22,7 @@
 
         button {
             background-color: brown;
-            color: blanchedalmond;
+            color: mintcream;
             padding: 10px 18px;
             border: none;
             border-radius: 6px;
@@ -40,10 +40,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            border: none;
+            border-radius: 30px;
         }
 
         p {
-            color: brown;
+            color: darkred;
             font-weight: bold;
             margin-bottom: 5px;
             align-items: center;
@@ -69,30 +71,32 @@
 
 <body>
 
-    <h1 style="margin: auto; text-align: center;"> QUAL A SUA MÍDIA JAPONESA FAVORITA? </h1>
-    <p style="color: rgb(255, 255, 255); margin: auto; text-align: center;"> Escreva informações sobre a obra escolhida (não obrigatório o uso de files)</p>
+    <h1 style="margin: auto; text-align: center;"> QUAL A SUA MÍDIA JAPONESA FAVORITA? (anime/mangá)</h1>
+    <p class="subtitle"> Escreva abaixo informações sobre a sua obra ecolhida 
+    <p style="color: palevioletred; margin: auto; text-align: center;"
+    </p>
 
     <div style="background-color: rgb(255, 255, 255); border: 2px solid rgb(12, 39, 72); padding: 25px; margin: auto; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.3); margin-top: 20px;">
 
         <form method="post" enctype="multipart/form-data">
 
-            <p> QUAL APP/SITE VOCÊ UTILIZA PARA ASSISTIR? (INSIRA O LINK SE POSSÍVEL) </p> 
-            <input type="text" name="siteanime" placeholder="Qual o app/site que você utiliza?" required>
+            <p> QUAL APP/SITE VOCÊ UTILIZA PARA ASSISTIR? </p> 
+            <input type="text" name="siteanime" placeholder="Ex: Crunchyroll" required>
 
             <p> OBRA: </p>
-            <input type="text" name="obra" placeholder="Obra" required>
+            <input type="text" name="obra" placeholder="Ex: Bleach, Dragon Ball, Naruto, One Piece" required>
 
             <p> AUTOR: </p> 
             <input type="text" name="autor" placeholder="Autor" required>
 
             <p> ANO DE LANÇAMENTO: </p> 
-            <input type="text" name="lançamento" placeholder="Ano de lançamento" required>
+            <input type="text" name="lançamento" placeholder="Ex: 2007" required>
 
             <p> GÊNERO: </p> 
-            <input type="text" name="genero" placeholder="Gênero" required>
+            <input type="text" name="genero" placeholder="Ex: Aventura, Psicológico, Ação, Romance" required>
 
             <p> TEMAS ABORDADOS: </p> 
-            <input type="text" name="temas" placeholder="Temas abordados" required> 
+            <input type="text" name="temas" placeholder="Ex: Superação, Amizade" required> 
 
         </form>
 
