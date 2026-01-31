@@ -1,103 +1,115 @@
+div {    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body {
-    min-height: 100vh;
-    background: linear-gradient(130deg, #1b1b41, #3a0ca3, #7209b7);
     margin: 0;
-    padding: 30px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #2222b1, #5a4eff, #a754eb);
+    color: white;
+
+ 
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 30px;
 }
+
 
 h1 {
-    color: #f1f1f1;
-    margin-bottom: 10px;
     text-align: center;
-    letter-spacing: 2px;
-    text-shadow: 0 0 8px slategrey;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.subtitle {
-    color: #ffb4f3;
+h2 {
     text-align: center;
-    margin-bottom: 25px;
-    font-size: 15px;  
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-button {
-    background: linear-gradient(135deg, #ff006e, #ff4d9d);
-    color: #f1f1f1;
-    padding: 15px 25px;
-    border: none;
-    border-radius: 1000px;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
 
-button:hover {
-    transform: translateY(-3px) scale (1.05);
-    box-shadow: 0 15px 25px rgb(96, 5, 46)
-}
-
-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 30px;
-    max-width: 500px;
+form {
+    background-color: #00025f;
+    padding: 25px;
     width: 100%;
-}
-
-p {
-    color: #3a0ca3;
-    font-weight: bold;
-    margin-bottom: 5px;
-    margin-top: 15px;
-    text-align: center;
-    letter-spacing: 1px;
-}
-
-input[type="text"] {
-    width: 100%;
-    padding: 11px;
-    border-radius: 20px;
-    border: 1px #d0c4ff;
-    margin-bottom: 5px;
-    outline: none;
-    font-size: 14px;
-    background-color: #faf7ff;
-    transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s;
-}
-
-input[type="text"] ::placeholder {
-    color: #a29bfe;
-}
-
-input[type="text"]:focus {
-    border-color: #7209b7;
-    box-shadow: 0 0 10px rgb(114, 9, 183, 0.5);
-    transform: scale(1.02);
-}
-
-.card {
-    background: linear-gradient(145deg, #f1f1f1, #d0c4ff);
-    border: 2px solid #7209b7;
-    padding: 20px;
+    max-width: 420px;
+    border-radius: 15px;
+    margin-bottom: 20px;
     margin-top: 20px;
-    text-align: center;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-@media (max-width: 600px) {
-    body {
-        padding: 15px;
-    }
-    h1 {
-        font-size: 20px;
-    }
-    button {
-        width: 100%;
-    }
+/* textos */
+p {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* inputs */
+input {
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+/* botoes */
+button {
+    width: 420px;
+    padding: 10px;
+    background-color: #4a6cff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+    
+
+    
+}
+
+/* efeito hover */
+button:hover {
+    transform: scale(1.05);
+    background-color: #6b85ff;
+}
+
+/* tabela */
+table {
+    width: 100%;
+    max-width: 900px;
+    border: #6b85ff;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #00025f;
+    border-radius: 15px;
+    overflow: hidden;
+}
+/* cabecalho da tabela */
+thead {
+    background-color: #111177;
+}
+
+/* celulas */
+th, td {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-right: 1px solid #ffffff;
+}
+
+/* linhas alternadas */
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* botoes dentro da tabela */
+td button {
+    width: auto;
+    padding: 6px 10px;
+    margin: 2px;
+    font-size: 12px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
 }

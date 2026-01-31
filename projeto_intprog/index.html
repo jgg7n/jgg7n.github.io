@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <title>Animes e Mangas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animes e mangás </title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    
-    <h1> QUAL A SUA MÍDIA JAPONESA FAVORITA? (anime/mangá)</h1>
-    
-<p class="subtitle"> Escreva abaixo informações sobre a sua obra escolhida </p>
 
-<div class="card">
+<h1>QUAL A SUA MÍDIA JAPONESA FAVORITA?</h1>
+<p>Preencha as informações da obra escolhida</p>
 
-    <form method="post" enctype="multipart/form-data">
+<form id="formulario">
+    <p>QUAL SITE/APP VOCÊ UTILIZA?</p>
+    <input id="siteanime" placeholder="Site ou App" required>
+    <p>NOME:</p>
+    <input id="obra" placeholder="Nome da obra" required>
+    <p>AUTOR:</p>
+    <input id="autor" placeholder="Autor" required>
+    <p>ANO DE LANÇAMENTO:</p>
+    <input id="lancamento" placeholder="Ano" required>
+    <p>GENERO:</p>
+    <input id="genero" placeholder="Gênero" required>
+    <p>TEMAS ABORDADOS:</p>
+    <input id="tema" placeholder="Tema" required>
+    <button type="submit">Salvar</button>
+</form>
 
-        <p> QUAL APP/SITE VOCÊ UTILIZA PARA ASSISTIR? </p> 
-        <input type="text" name="siteanime" placeholder="Ex: Crunchyroll" required>
+<h2>Dados cadastrados</h2>
 
-        <p> OBRA: </p>
-        <input type="text" name="obra" placeholder="Ex: Bleach, Dragon Ball, Naruto, One Piece" required>
 
-        <p> AUTOR: </p> 
-        <input type="text" name="autor" placeholder="Autor" required>
+<table>
+    <thead>
+        <tr>
+            <th>Site</th>
+            <th>Obra</th>
+            <th>Autor</th>
+            <th>Ano</th>
+            <th>Genero</th>
+            <th>Tema</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody id="resultado"></tbody>
+</table>
 
-        <p> ANO DE LANÇAMENTO: </p> 
-        <input type="text" name="lançamento" placeholder="Ex: 2007" required>
+<button onclick="exportarCSV()">Baixar CSV</button>
 
-        <p> GÊNERO: </p> 
-        <input type="text" name="genero" placeholder="Ex: Aventura, Psicológico, Ação, Romance" required>
-
-        <p> TEMAS ABORDADOS: </p> 
-        <input type="text" name="temas" placeholder="Ex: Superação, Amizade" required> 
-        
-        <p style="margin-top: 22px;">
-        <button type="submit"> ENVIAR FORMULÁRIO </button>
-    </p>
-
-    </form>
-
-</div>
-
+<script src="script.js"></script>
 </body>
 </html>
