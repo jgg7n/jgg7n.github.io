@@ -46,23 +46,21 @@ input {
     width: 400px;
     padding: 10px;
     margin-bottom: 25px;
-    border-radius: 6px;
+    border-radius: 5px;
     border: none;
     outline: none;
 }
 
 button {
-    width: 420px;
+    width: 400px;
     padding: 10px;
     background-color: #4a6cff;
-    color: white;
+    color: #ffffff;
     border: none;
     border-radius: 25px;
     cursor: pointer;
     transition: 0.3s;
-    margin-top: 20px;
-    
-
+    margin-top: 20px;    
     
 }
 
@@ -73,7 +71,7 @@ button:hover {
 }
 
 table {
-    width: 100%;
+    width: 900px;
     max-width: 900px;
     border: #6b85ff;
     border-collapse: collapse;
@@ -90,7 +88,7 @@ thead {
 th, td {
     padding: 10px;
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
     border-right: 1px solid #ffffff;
 }
 
@@ -102,10 +100,25 @@ tbody tr:nth-child(even) {
 /* estilizar o botao da acao da tabela */
 td button {
     width: auto;
-    padding: 6px 10px;
+    padding: 5 10px;
     margin: 2px;
     font-size: 12px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgb(0, 0, 0);
 }
 
+.input-arquivo {
+    width: 400px;
+    padding: 10px;
+    background-color: #4a6cff;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 50px; 
+}
+
+.input-arquivo:hover {
+    transform: scale(1.05);
+    background-color: #6b85ff;
+}
