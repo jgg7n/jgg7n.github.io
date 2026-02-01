@@ -110,9 +110,8 @@ td button {
 }
 
 @media (max-width: 600px) {
-    
-    input, button, select {
+    input, select, button {
         width: 100%;
-        margin-bottom: 10px;
+        display: block;
     }
 }
