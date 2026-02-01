@@ -99,7 +99,7 @@ tbody tr:nth-child(even) {
     background-color: #ffffff;
 }
 
-/* botoes dentro da tabela */
+/* estilizar o botao da acao da tabela */
 td button {
     width: auto;
     padding: 6px 10px;
@@ -108,3 +108,4 @@ td button {
     border-radius: 15px;
     box-shadow: 0 4px 10px rgb(0, 0, 0);
 }
+
